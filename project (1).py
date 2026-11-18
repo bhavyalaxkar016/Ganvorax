@@ -553,7 +553,7 @@ from google.colab import files
 
 files.download("minimind_ai.pth")
 
-!pip install -q gradio
+
 
 import gradio as gr
 
