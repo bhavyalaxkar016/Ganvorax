@@ -1,58 +1,105 @@
+# Ganvorax – MiniMind AI
 
-# MiniMind AI
-### A Small Language Model Built from Scratch Using PyTorch
+**A Small Language Model (SLM) built from scratch using Transformer architecture and PyTorch.**
 
-## Project Overview
-MiniMind AI is a lightweight language model developed
-using a Decoder-Only Transformer architecture.
+## About the Project
 
-The project demonstrates how a language model learns
-patterns from text and predicts the next character.
+MiniMind AI is an educational Deep Learning project designed to understand and implement the fundamental concepts of Transformer-based language models.
 
-## Objectives
-- Understand Small Language Models.
-- Implement Transformer architecture.
-- Build self-attention mechanisms.
-- Train a language model using PyTorch.
-- Generate text using the trained model.
+The model learns patterns from a small educational text dataset and generates text using next-character prediction.
 
 ## Technologies Used
+
 - Python
 - PyTorch
 - NumPy
 - Matplotlib
-- Google Colab
 - Gradio
+- Google Colab
 
 ## Model Architecture
+
+The project implements the following components:
+
 1. Character-level Tokenization
 2. Token Embedding
 3. Positional Embedding
-4. Masked Self-Attention
+4. Self-Attention
 5. Multi-Head Attention
-6. Feed-Forward Network
-7. Transformer Blocks
-8. Output Prediction Layer
+6. Feed Forward Network
+7. Layer Normalization
+8. Output Layer
 
-## Dataset
-A small educational text dataset containing
-computer science and artificial intelligence topics.
+## Model Configuration
 
-## Training
-The model is trained using next-token prediction
-and the AdamW optimizer.
+| Parameter | Value |
+|---|---|
+| Embedding Dimension | 128 |
+| Attention Heads | 4 |
+| Transformer Layers | 4 |
+| Batch Size | 32 |
+| Block Size | 64 |
+| Training Iterations | 1000 |
+| Learning Rate | 0.0003 |
+| Dropout | 0.1 |
 
-## Evaluation
-- Training Loss
-- Validation Loss
-- Perplexity
-- Generated Text Samples
+## Features
 
-## Project Platform
-Google Colab
+- Transformer implementation from scratch
+- Custom educational dataset
+- Model training and validation
+- Training loss visualization
+- Text generation
+- Model checkpoint saving
+- Gradio chatbot interface
 
-## Developer
-Bhavya Laxkar
+## Installation
 
-## Project Status
-Educational prototype - Development and testing.
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Running the Project
+
+The original implementation is designed for Google Colab.
+
+1. Open the notebook in Google Colab.
+2. Select a runtime.
+3. Run the notebook cells.
+4. Train the Transformer model.
+5. Test text generation.
+6. Launch the Gradio interface.
+
+## Project Structure
+
+```text
+Ganvorax/
+├── README.md
+├── project.py
+├── requirements.txt
+└── .gitignore
+```
+
+## Future Improvements
+
+- Expand the training dataset.
+- Improve text generation quality.
+- Add model checkpoint loading.
+- Improve chatbot responses.
+- Deploy the model as a web application.
+
+## Learning Objectives
+
+- Understand Transformer architecture.
+- Learn self-attention mechanisms.
+- Implement a language model using PyTorch.
+- Understand model training and evaluation.
+- Explore Natural Language Processing.
+
+## Author
+
+Developed as a Deep Learning project.
+
+**Project:** Mini
