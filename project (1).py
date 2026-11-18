@@ -381,9 +381,6 @@ class Head(nn.Module):
 
 print("Self Attention Head defined successfully!")
 
-model = MiniMindAI().to(device)
-
-print("MiniMind AI Transformer Created!")
 
 print("Total Parameters:",
       sum(p.numel() for p in model.parameters()))
